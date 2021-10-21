@@ -86,10 +86,15 @@
                   <li>Luce's Choice Axiom: An introduction paper by <a href="https://escholarship.org/uc/item/02b7s10w">Yellott (2001)</a></li>
                   <li>Question and Exercise: How are the BT and PL models similar to or different from one another? Come up with a few examples for situations in which each could be used.</li>
                 </ul>
-              <li>Week 4: Ranking Models II. Rank distances, Mallows' models</li>
+              <li>Week 4: Ranking Models II. Rank distances, Mallows' models. This week, you'll do some independent research, read an important ranking paper, and try out some code in R for ranking models.</li>
                 <ul>
-                  <li>Readings: TBD</li>
-                </ul>
+                  <li>Rank distances: Learn about the following six distance metrics between rankings: Spearman's Footrule, Spearman's Rank Correlation, Hamming distance, Kendall's tau, Cayley distance, and Ulam's distance. A 
+                  good place to start learning about them is <a href="https://www.jstor.org/stable/pdf/4355560.pdf">here (pages 112-119)</a>, but feel free to look for other resources as well. Once you understand them, write down two rankings of at least 6 objects and calculate the distance
+                  between them using each of the aforementioned metrics. How similar or different are they? Can you write down two rankings that have similar on some metrics but far apart on others?</li>
+                  <li>Mallows' model: Read this seminal paper on the Mallows' model:  <a href="https://www.jstor.org/stable/pdf/2345433.pdf">"Distance Based Ranking Models"</a> by Fligner and Verducci (1986).</li>
+                  <li>Exercise: Install and load the "PerMallows" package in R. Then, generate samples from a Mallows' distribution with a specified central ranking and scale parameter of your choosing (use the function "rmm"). After, fit a Mallows' model to the
+                  data using the "lgmm" function. Repeat this many times, and count how often the estimated central ranking is the central ranking you provided initially. How accurate was estimation of the scale parameter, theta?</li>
+                  </ul>
               <li>Week 5: Coding Preference Learning Models</li>
                 <ul>
                   <li>Readings: TBD</li>
